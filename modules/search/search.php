@@ -15,7 +15,7 @@
         <?php if(mysqli_num_rows($querySearch) > 0) {
             while($prdSearch = mysqli_fetch_assoc($querySearch)) {
         ?>
-            <div style="margin-top:25px; margin-left:100px;" class="col-lg-7 col-md-7 col-sm-12 mx-product">
+            <div  class="col-lg-7 col-md-7 col-sm-12 mx-product">
                 <div class="product-item card text-center">
                     <a href="index.php?page_layout=product&prd_id=<?php echo $prdSearch['prd_id']; ?>"><img src="admin/images/<?php echo $prdSearch['prd_image']; ?>"></a>
                     <h4><a href="index.php?page_layout=product&prd_id=<?php echo $prdSearch['prd_id']; ?>"><?php echo $prdSearch['prd_name']; ?></a></h4>
